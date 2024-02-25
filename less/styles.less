@@ -1,0 +1,82 @@
+// CSS Preprocessors Stylesheet
+// By: Ruben Lopez
+
+// Define variables
+@red: #ff0000;
+@blue: #0000ff;
+@green: #138813;
+@purple: #800080;
+@base_unit: 100px;
+@border_radius: 8px;
+@border: 2px solid black;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 50vh;
+    background-color: lighten(grey, 25%);
+}
+
+// Navigation Bar
+nav {
+    background-color: orange;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+// Footer
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: @base_unit;
+}
+
+
+// Styles for individual boxes
+.redBox {
+    background-color: @red;
+    width: @base_unit;
+    height: @base_unit;
+    border-radius: @border_radius;
+    border: @border;
+    // annoying but works to space out each box
+    margin-right: @base_unit;
+}
+
+.blueBox {
+    background-color: @blue;
+    width: @base_unit * 2;
+    height: @base_unit * 2;
+    border-radius: @border_radius;
+    border: @border;
+    margin-right: @base_unit;
+}
+
+.greenBox {
+    background-color: @green;
+    width: @base_unit * 2.5;
+    height: @base_unit * 2.5;
+    border-radius: @border_radius;
+    border: @border;
+    margin-right: @base_unit;
+}
+
+.purpleBox {
+    background-color: @purple;
+    width: @base_unit * .5;
+    height: @base_unit * .5;
+    border-radius: @border_radius;
+    border: @border;
+}
